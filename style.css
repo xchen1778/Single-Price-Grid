@@ -1,0 +1,178 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* ----------------------------------- */
+
+
+
+
+body {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    background-color: #E6EFF5;
+    font-size:16px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width:85vw;
+    max-width:700px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap:1.4em;
+    justify-content: flex-start;
+    padding: 2em;
+}
+
+.monthly {
+    background-color: #2AB3B1;
+}
+
+.why-us {
+    background-color: #4ABFBD;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+    letter-spacing: -0.03em;
+    color:white;
+}
+
+.join-community h1 {
+    color: #2AB3B1;
+}
+
+.join-community h2 {
+    font-size: clamp(0.9375rem, 0.6875rem + 1vw ,1.125rem);
+    color: #C0DF33;
+    font-weight: 700;
+    line-height: 1.33em;
+    letter-spacing: -0.01em;
+}
+
+.join-community p {
+    font-size: clamp(0.875rem, 0.625rem + 1vw ,1rem);
+    color: #9AA7BE;
+    line-height: 1.86em;
+    letter-spacing: -0.02em;
+}
+
+.monthly {
+    color: white;
+}
+
+.monthly h2 {
+
+    font-size: 2rem;
+    font-weight: 700;
+    display:flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.monthly h2 span {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.monthly p {
+    font-size: 1rem;
+
+    margin-top: -0.5em;
+}
+
+.monthly a {
+    align-self: stretch;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #C0DF33;
+    padding: 1.2em 0;
+    border-radius: 0.3em;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+    transition: background-color 200ms;
+}
+
+.monthly a:hover, .monthly a:focus {
+    background-color: #B3D221;
+}
+
+.features {
+    display:flex;
+    flex-direction: column;
+    gap:0.5em;
+    color: rgba(255,255,255,0.7);
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }   
+
+    .join-community {
+        grid-column: span 2;
+    }
+
+}
